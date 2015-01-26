@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		MK6.AutomatedTesting.UI.nuspec = MK6.AutomatedTesting.UI.nuspec
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MK6.AutomatedTesting.UI.Tests", "MK6.AutomatedTesting.UI.Tests\MK6.AutomatedTesting.UI.Tests.csproj", "{7A2E00FA-1B85-42C7-A34A-6568161E11D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{706A400F-797D-4DCC-B3CE-F4370A6D5BDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{706A400F-797D-4DCC-B3CE-F4370A6D5BDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{706A400F-797D-4DCC-B3CE-F4370A6D5BDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2E00FA-1B85-42C7-A34A-6568161E11D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A2E00FA-1B85-42C7-A34A-6568161E11D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A2E00FA-1B85-42C7-A34A-6568161E11D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A2E00FA-1B85-42C7-A34A-6568161E11D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
