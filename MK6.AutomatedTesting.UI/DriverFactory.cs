@@ -40,16 +40,37 @@ namespace MK6.AutomatedTesting.UI
                 case "Remote":
                     return new RemoteWebDriver(
                         new Uri(configSection.RemoteUrl),
-                        new DesiredCapabilities(new Dictionary<string, object> 
-                        { 
-                            { "browser", configSection.RemoteBrowser }, 
-                            { "version", configSection.RemoteBrowserVersion } 
-                        }));
+                        BuildRemoteCapabilities(configSection));
                 default:
                     throw new ApplicationException(
                         string.Format(
                             "Unable to create a driver of type {0}",
                             configSection.Browser));
+            }
+        }
+
+        public static DesiredCapabilities BuildRemoteCapabilities(DriverConfigurationSection configSection)
+        {
+            switch(configSection.RemoteBrowser.ToLower())
+            {
+                case "firefox":
+                    var capabilities = DesiredCapabilities.Firefox();
+                    capabilities.IsJavaScriptEnabled = true;
+                    return capabilities;
+                case "chrome":
+                    return DesiredCapabilities.Chrome();
+                case "internet explorer":
+                    return new DesiredCapabilities( new Dictionary<string, object> 
+                        { 
+                            { "browserName", "internet explorer" }, 
+                            { "version", configSection.RemoteBrowserVersion },
+                            { "javascriptEnabled", true }
+                        });
+                default:
+                    throw new ApplicationException(
+                        string.Format(
+                            "Unrecognized remote browser {0}",
+                            configSection.RemoteBrowser));
             }
         }
 
