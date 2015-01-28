@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6D218381-A2AA-439D-ABF3-617C88701406}"
 	ProjectSection(SolutionItems) = preProject
 		MK6.AutomatedTesting.UI.nuspec = MK6.AutomatedTesting.UI.nuspec
+		MK6.AutomatedTesting.UI.SpecFlow.nuspec = MK6.AutomatedTesting.UI.SpecFlow.nuspec
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MK6.AutomatedTesting.UI.Tests", "MK6.AutomatedTesting.UI.Tests\MK6.AutomatedTesting.UI.Tests.csproj", "{7A2E00FA-1B85-42C7-A34A-6568161E11D1}"
