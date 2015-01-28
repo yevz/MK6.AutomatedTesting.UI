@@ -111,6 +111,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application.cs" />
     <Compile Include="Components\Button.cs" />
     <Compile Include="Components\ClosableDialog.cs" />
     <Compile Include="Components\Dialog.cs" />
