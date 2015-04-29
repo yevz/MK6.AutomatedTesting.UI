@@ -22,9 +22,17 @@ namespace MK6.AutomatedTesting.UI.Components
                 StringComparison.InvariantCultureIgnoreCase);
         }
 
+        public IWebDriver Browser { get { return _browser; } }
+
         public void Load()
         {
             this._browser.Url = this.Uri.ToString();
+        }
+
+        public bool IsCurrentRelativePage()
+        {
+            return new Uri(_browser.Url).PathAndQuery.Equals(Uri.PathAndQuery,
+                StringComparison.InvariantCultureIgnoreCase);
         }
     }
 }
